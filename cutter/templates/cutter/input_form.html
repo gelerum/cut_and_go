@@ -1,0 +1,9 @@
+<div class="container">
+    <form method="POST">
+      <fieldset>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="cut" class="btn btn-primary">Cut</button>
+        </fieldset>
+    </form>
+</div>
