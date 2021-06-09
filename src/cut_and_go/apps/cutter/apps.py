@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class CutterConfig(AppConfig):
-    name = 'cutter'
+    name = 'cut_and_go.apps.cutter'

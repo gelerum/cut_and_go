@@ -1,0 +1,24 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cut and Go</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+    </style>
+    <link rel="stylesheet" href="{% static 'css/cutter/styles.css' %}" />
+  </head>
+
+  <body>
+    <header>
+      <div class="banner">
+        <p class="name"><a href="http://127.0.0.1:8000">Cut and Go</a></p>
+      </div>
+    </header>
+    <div class="redirect">
+        <p class="short-url-redirect"><a class="link-short-url" href="{{ short_url }}">{{ full_short_url }}</a></p>
+    </div>
+  </body>
+</html>

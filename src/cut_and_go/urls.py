@@ -3,5 +3,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('cutter.urls')),
+    path('', include('cut_and_go.apps.cutter.urls')),
 ]
