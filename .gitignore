@@ -1,5 +1,5 @@
 debug.log
-.vscode/
+.vscode/*
 src/cut_and_go/apps/*/migrations/
 # Byte-compiled / optimized / DLL files
 __pycache__/
