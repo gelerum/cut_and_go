@@ -24,11 +24,9 @@ def add_new_url_view(request):
         short_url = sha256((long_url).encode()) \
             .hexdigest()[:10]
         add_object_to_db_if_not_exitst(long_url, short_url)
-        return render(request, 'index.html', {
-            'short_url': '127.0.0.1:8000/' + short_url,
-        })
+        short_url = '127.0.0.1:8000/' + short_url
     return render(request, 'index.html', {
-        'short_url': '',
+        'short_url': short_url,
     })
 
 
