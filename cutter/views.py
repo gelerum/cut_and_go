@@ -1,6 +1,8 @@
 from hashlib import sha256
 
 from .models import URL
+
+from django.conf import settings
 from .services import add_object_to_db_if_not_exitst
 from django.shortcuts import render, redirect, get_object_or_404
 
@@ -24,7 +26,7 @@ def add_new_url_view(request):
         short_url = sha256((long_url).encode()) \
             .hexdigest()[:10]
         add_object_to_db_if_not_exitst(long_url, short_url)
-        short_url = '127.0.0.1:8000/' + short_url
+        short_url = settings.SITE_URL + '/' + short_url
     return render(request, 'index.html', {
         'short_url': short_url,
     })

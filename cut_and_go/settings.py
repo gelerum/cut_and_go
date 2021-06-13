@@ -12,6 +12,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
+SITE_URL = os.getenv('SITE_URL')
+
 DEBUG = True
 
 ALLOWED_HOSTS = []
