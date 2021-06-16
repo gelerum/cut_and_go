@@ -73,14 +73,14 @@ python manage.py runserver
 
 # Add database support (PostgreSQL as example)
 
-### Install required modules:
+[Install PostgreSQL](postgresql.org/download/)
+
+### Install required modules
 
 ```bash
 pip install psycopg2
 ```
-### Add engine to environment variable
-
-[Install PostgreSQL](postgresql.org/download/)
+### Add engine to environment variable:
 
 ```bash
 export DB_ENGINE="django.db.backends.postgresql_psycopg2"
