@@ -71,4 +71,4 @@ python manage.py runserver
 ```
 **Note**: If you set `SITE_URL` and `ALLOWED_HOSTS` values different from `127.0.0.1:8000` you should add their value at the end of the command ```python manage.py runserver 0.0.0.0:8000```
 
-# Add database support(PostgreSQL as example)
+# Add database support (PostgreSQL as example)
