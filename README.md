@@ -85,3 +85,6 @@ pip install psycopg2
 ```bash
 export DB_ENGINE="django.db.backends.postgresql_psycopg2"
 ```
+
+### License
+Usage is provided under the [MIT License](opensource.org/licenses/mit-license.php). See LICENSE for the full details.
