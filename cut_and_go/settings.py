@@ -14,9 +14,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 SITE_URL = os.getenv('SITE_URL')
 
-DEBUG = True
+DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS')]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'cutter',
+    'cutter.apps.CutterAppConfig',
 ]
 
 MIDDLEWARE = [
@@ -100,7 +100,3 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
