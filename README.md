@@ -80,7 +80,7 @@ python manage.py runserver
 ```bash
 pip install psycopg2
 ```
-### Add engine to environment variable:
+### Add engine to the environment variable:
 
 ```bash
 export DB_ENGINE="django.db.backends.postgresql_psycopg2"
