@@ -2,7 +2,7 @@
 
 ![Demo](https://raw.githubusercontent.com/codegleb/cut_and_go/master/assets/demo.gif)
 
-# Run locally
+## Run locally
 
 **Note**: Run all commands in the project root directory(the directory that you clone)
 
@@ -71,7 +71,7 @@ python manage.py runserver
 ```
 **Note**: If you set `SITE_URL` and `ALLOWED_HOSTS` values different from `127.0.0.1:8000` you should add their value at the end of the command ```python manage.py runserver 0.0.0.0:8000```
 
-# Add database support (PostgreSQL as example)
+## Add database support (PostgreSQL as example)
 
 [Install PostgreSQL](postgresql.org/download/)
 
@@ -86,5 +86,5 @@ pip install psycopg2
 export DB_ENGINE="django.db.backends.postgresql_psycopg2"
 ```
 
-### License
+## License
 Usage is provided under the [MIT License](opensource.org/licenses/mit-license.php). See LICENSE for the full details.
