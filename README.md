@@ -6,26 +6,26 @@
 
 ### Create virtual environment
 
-'''bash
+```bash
 python3 -m venv env
-'''
+```
 ### Activate environment
 
-'''bash
+```bash
 source env/bin/activate
-'''
+```
 
 ### Install requirements
 
-''' bash
+```bash
 pip install -r requirements.txt
-'''
+```
 
 ### Set environment variable 
 
 You can create .env file in root and add the following lines:
 
-'''
+```
 SECRET_KEY="<Secret key>"
 SITE_URL="<Site url(for default set 127.0.0.1)>"
 DEBUG="<True or False>"
@@ -36,15 +36,16 @@ DB_USER="<DB user with DB access>"
 USER_PASSWORD="<DB user password>"
 DB_HOST="<DB host>"
 DB_PORT="<DB port>"
-'''
+```
+
 Or you can export variables above
 
-'''bash
+```bash
 export <VARIABLE_NAME>="<VALUE>"
-'''
+```
  
 ### Run with Gunicorn
 
-'''bash
+```bash
 gunicorn cut_and_go.wsgi
-'''
+```
