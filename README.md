@@ -40,6 +40,7 @@ USER_PASSWORD="<DB user password>"
 DB_HOST="<DB host>"
 DB_PORT="<DB port>"
 ```
+**Note**: `SITE_URL` and `ALLOWED_HOSTS` should be same
 
 Or you can export variables above
 
@@ -47,8 +48,9 @@ Or you can export variables above
 export <VARIABLE_NAME>="<VALUE>"
 ```
  
-### Launch Gunicorn
+### Run server
 
 ```bash
-gunicorn cut_and_go.wsgi
+python manage.py runserver
 ```
+**Note**: If you set `SITE_URL` and `ALLOWED_HOSTS` values different from `127.0.0.1:8000` you should add your value in the end of command
