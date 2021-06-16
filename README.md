@@ -4,7 +4,7 @@
 
 ## Run locally
 
-**Note**: Run all commands in the project root directory(the directory that you clone)
+**Note**: Run all commands in the project root directory(the directory that you clone).
 
 ### Create virtual environment
 
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ```bash
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 ```
-Copy the output and add it to the environment variable
+Copy the output and add it to the environment variable.
 
 ### Set environment variables
 
@@ -49,7 +49,7 @@ DB_PORT="<DB port>"
 ```
 **Note**: `SITE_URL` and `ALLOWED_HOSTS` should be the same, but in `ALLOWED_HOSTS` address without a port
 
-Or you can export variables above manually
+Or you can export variables above manually.
 
 ```bash
 export <VARIABLE_NAME>="<VALUE>"
@@ -57,7 +57,7 @@ export <VARIABLE_NAME>="<VALUE>"
 
 ### Migrations
 
-**Note**: `requirements.txt` doesn't contain any DB engine, but it is described in [next chapter](#add-database-support-postgresql-as-example)
+**Note**: `requirements.txt` doesn't contain any DB engine, but it is described in [next chapter](#add-database-support-postgresql-as-example).
 
 ```bash
 python manage.py makemigration cutter
@@ -69,7 +69,7 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
-**Note**: If you set `SITE_URL` and `ALLOWED_HOSTS` values different from `127.0.0.1:8000` you should add their value at the end of the command ```python manage.py runserver 0.0.0.0:8000```
+**Note**: If you set `SITE_URL` and `ALLOWED_HOSTS` values different from `127.0.0.1:8000` you should add their value at the end of the command ```python manage.py runserver 0.0.0.0:8000```.
 
 ## Add database support (PostgreSQL as example)
 
