@@ -9,7 +9,7 @@
 ### Create virtual environment
 
 ```bash
-python3 -m venv env
+python -m venv env
 ```
 
 ### Activate environment
@@ -24,11 +24,18 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
+### Generate secret kay
+
+```bash
+python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+```
+Copy the output and add to environment variable
+
 ### Set environment variable 
 
 You can create .env file and add the following lines:
 
-```
+```bash
 SECRET_KEY="<Secret key>"
 SITE_URL="<Site url(for default set 127.0.0.1)>"
 DEBUG="<True or False>"
@@ -47,10 +54,16 @@ Or you can export variables above
 ```bash
 export <VARIABLE_NAME>="<VALUE>"
 ```
- 
+### Migrations
+
+```bash
+python manage.py makemigration cutter
+python manage.py migrate
+```
+
 ### Run server
 
 ```bash
 python manage.py runserver
 ```
-**Note**: If you set `SITE_URL` and `ALLOWED_HOSTS` values different from `127.0.0.1:8000` you should add your value in the end of command
+**Note**: If you set `SITE_URL` and `ALLOWED_HOSTS` values different from `127.0.0.1:8000` you should add your value at the end of the command
