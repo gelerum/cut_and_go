@@ -57,7 +57,7 @@ export <VARIABLE_NAME>="<VALUE>"
 
 ### Migrations
 
-**Note**: `requirements.txt` doesn't contain any DB engine, but it is described in [next chapter](#run-locally)
+**Note**: `requirements.txt` doesn't contain any DB engine, but it is described in [next chapter](#add-database-support)
 
 ```bash
 python manage.py makemigration cutter
@@ -72,3 +72,16 @@ python manage.py runserver
 **Note**: If you set `SITE_URL` and `ALLOWED_HOSTS` values different from `127.0.0.1:8000` you should add their value at the end of the command ```python manage.py runserver 0.0.0.0:8000```
 
 # Add database support (PostgreSQL as example)
+
+### Install required modules:
+
+```bash
+pip install psycopg2
+```
+### Add engine to environment variable
+
+[Install PostgreSQL](postgresql.org/download/)
+
+```bash
+export DB_ENGINE="django.db.backends.postgresql_psycopg2"
+```
