@@ -36,7 +36,7 @@ Copy the output and add it to the environment variable
 You can create .env file and add the following lines:
 
 ```bash
-SECRET_KEY="<Secret key>"
+SECRET_KEY="<Secret key(generated at previous chapter)>"
 SITE_URL="<Site url(for default set 127.0.0.1)>"
 DEBUG="<True or False>"
 ALLOWED_HOSTS="<Allowed hosts(for default set '127.0.0.1', 'localhost')>"
