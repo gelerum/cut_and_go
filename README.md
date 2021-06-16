@@ -75,7 +75,7 @@ python manage.py runserver
 
 [Install PostgreSQL](postgresql.org/download/)
 
-### Install required modules
+### Install required module
 
 ```bash
 pip install psycopg2
