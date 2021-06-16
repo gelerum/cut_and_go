@@ -4,11 +4,14 @@
 
 # Run locally
 
+**Note**: Run all commands in the project root directory(the directory that you clone)
+
 ### Create virtual environment
 
 ```bash
 python3 -m venv env
 ```
+
 ### Activate environment
 
 ```bash
@@ -23,7 +26,7 @@ pip install -r requirements.txt
 
 ### Set environment variable 
 
-You can create .env file in root and add the following lines:
+You can create .env file and add the following lines:
 
 ```
 SECRET_KEY="<Secret key>"
@@ -44,7 +47,7 @@ Or you can export variables above
 export <VARIABLE_NAME>="<VALUE>"
 ```
  
-### Run with Gunicorn
+### Launch Gunicorn
 
 ```bash
 gunicorn cut_and_go.wsgi
