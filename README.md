@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ```bash
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 ```
-Copy the output and add to environment variable
+Copy the output and add it to the environment variable
 
 ### Set environment variable 
 
