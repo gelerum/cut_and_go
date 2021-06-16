@@ -57,7 +57,7 @@ export <VARIABLE_NAME>="<VALUE>"
 
 ### Migrations
 
-**Note**: `requirements.txt` doesn't contain any DB engine, but it is described in [next chapter](#add-database-support)
+**Note**: `requirements.txt` doesn't contain any DB engine, but it is described in [next chapter](#add-database-support-postgresql-as-example)
 
 ```bash
 python manage.py makemigration cutter
