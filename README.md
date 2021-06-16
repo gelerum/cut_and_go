@@ -37,9 +37,9 @@ You can create .env file and add the following lines:
 
 ```bash
 SECRET_KEY="<Secret key(generated at previous chapter)>"
-SITE_URL="<Site url(for default set ```127.0.0.1:8000```)>"
+SITE_URL="<Site url(for default set 127.0.0.1:8000)>
 DEBUG="<True or False>"
-ALLOWED_HOSTS="<Allowed hosts(for default set ```'127.0.0.1'```)>"
+ALLOWED_HOSTS="<Allowed hosts(for default set '127.0.0.1')>"
 DB_ENGINE="<DB engine>"
 DB_NAME="<DB name>"
 DB_USER="<DB user with DB access>"
@@ -47,13 +47,14 @@ USER_PASSWORD="<DB user password>"
 DB_HOST="<DB host>"
 DB_PORT="<DB port>"
 ```
-**Note**: `SITE_URL` and `ALLOWED_HOSTS` should be same
+**Note**: `SITE_URL` and `ALLOWED_HOSTS` should be same, but in `ALLOWED_HOSTS` address without port
 
 Or you can export variables above manually
 
 ```bash
 export <VARIABLE_NAME>="<VALUE>"
 ```
+
 ### Migrations
 
 ```bash
