@@ -49,7 +49,7 @@ DB_PORT="<DB port>"
 ```
 **Note**: `SITE_URL` and `ALLOWED_HOSTS` should be same
 
-Or you can export variables above
+Or you can export variables above manually
 
 ```bash
 export <VARIABLE_NAME>="<VALUE>"
