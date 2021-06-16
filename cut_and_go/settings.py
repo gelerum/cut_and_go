@@ -10,8 +10,6 @@ load_dotenv(dotenv_path)
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
-
 SITE_URL = os.getenv('SITE_URL')
 
 DEBUG = os.getenv('DEBUG')
@@ -100,3 +98,5 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
