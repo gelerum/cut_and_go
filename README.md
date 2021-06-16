@@ -31,7 +31,7 @@ python -c 'from django.core.management.utils import get_random_secret_key; print
 ```
 Copy the output and add it to the environment variable
 
-### Set environment variable 
+### Set environment variables
 
 You can create .env file and add the following lines:
 
