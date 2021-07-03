@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=
+      - POSTGRES_USER=
+      - POSTGRES_PASSWORD=
+  web:
+    build: .
+    command: bash -c "python3 manage.py makemigrations && python3 manage.py migrate && python3 -m gunicorn cut_and_go.wsgi --bind 0.0.0.0:8000"
+    volumes:
+      - .:/cut_and_go
+    expose:
+      - 8000
+    depends_on:
+      - db
+    environment:
+      - DB_ENGINE=django.db.backends.postgresql_psycopg2
+      - DB_NAME=
+      - DB_USER=
+      - USER_PASSWORD=
+      - DB_HOST=db
+      - DB_PORT=5432
+      - ALLOWED_HOSTS=
+      - SECRET_KEY=
+      - DEBUG=
+      - SITE_URL=
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+    depends_on:
+      - web
