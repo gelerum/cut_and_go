@@ -1,8 +1,9 @@
-from . import views
 from django.urls import path
+
+from . import views
 
 
 urlpatterns = [
-    path('', views.add_new_url_view, name='add new view'),
-    path('<str:following_pattern>/', views.redirect_view, name='redirect view')
+    path('', views.index_view, name='add new view'),
+    path('<str:redirect_pattern>/', views.redirect_view, name='redirect view'),
 ]
