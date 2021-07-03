@@ -53,12 +53,12 @@ WSGI_APPLICATION = 'cut_and_go.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'os.getenv('DB_ENGINE')',
-        'NAME': 'os.getenv('DB_NAME')',
-        'USER': 'os.getenv('DB_USER')',
-        'PASSWORD': 'os.getenv('USER_PASSWORD')',
-        'HOST': 'os.getenv('DB_HOST')',
-        'PORT': 'os.getenv('DB_POST')',
+        'ENGINE': os.getenv('DB_ENGINE'),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('USER_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_POST'),
     }
 }
 
