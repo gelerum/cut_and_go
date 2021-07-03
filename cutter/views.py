@@ -15,7 +15,7 @@ def index_view(request):
         long_url = url_to_one_kind(initial_url)
         short_url = sha256(long_url.encode()).hexdigest()[:10]
         add_object_to_db_if_not_exitst(long_url, short_url)
-        short_url = os.getenv('SITE_URL') + short_url
+        short_url = os.getenv('SITE_URL') + '/' + short_url
     return render(request, 'index.html', {
         'short_url': short_url,
     })
