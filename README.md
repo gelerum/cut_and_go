@@ -2,7 +2,7 @@
 
 ![Demo](https://raw.githubusercontent.com/codegleb/cut_and_go/master/assets/demo.gif)
 ## Run locally
-
+fd
 **Note**: Run all commands in the project root directory(the directory that you clone).
 
 ### Create virtual environment
