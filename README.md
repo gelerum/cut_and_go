@@ -1,7 +1,6 @@
 # Cut and Go: A simple URL shortener
 
 ![Demo](https://raw.githubusercontent.com/codegleb/cut_and_go/master/assets/demo.gif)
-
 ## Run locally
 
 **Note**: Run all commands in the project root directory(the directory that you clone).
