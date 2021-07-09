@@ -19,7 +19,6 @@ services:
     depends_on:
       - db
     environment:
-      - DB_ENGINE=django.db.backends.postgresql_psycopg2
       - DB_NAME=
       - DB_USER=
       - USER_PASSWORD=
