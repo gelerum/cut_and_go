@@ -1,7 +1,7 @@
 
 # Cut and Go: A simple URL shortener
 
-![Demo](https://raw.githubusercontent.com/codegleb/cut_and_go/master/assets/demo.gif)
+![Demo](https://raw.githubusercontent.com/gelerum/cut_and_go/master/assets/demo.gif)
 ## Run
 
 docker-compose.yml file setups `PostgreSQL`, `Nginx`, `Django`.
